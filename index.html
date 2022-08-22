@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8"/>
+<meta name="description"content="i love my site"/>
+<title>
+my website
+</title>
+<link rel="stylesheet" href="harry.css" >
+<style>
+
+   
+    
+    
+  
+ 
+ 
+   
+</style>
+
+    </head>
+    <body>
+<div class="crud">
+        <div class="head">
+            <h1>CRUDS</h1>
+            <P>PRODUCT MANAGMENT SYSTEM</P>
+        </div>
+
+
+        <!--      ..................  ..........       -->
+        <div class="input">
+     <input type="text" id="title" placeholder="title">
+
+        <div class="price">
+          <input type="number" onkeyup="getTotal()"  id="price" placeholder="price">
+          <input type="number" onkeyup="getTotal()"  id="taxes" placeholder="taxes">
+          <input type="number" onkeyup="getTotal()"  id="ads" placeholder="ads">
+          <input type="number" onkeyup="getTotal()"  id="discount" placeholder="discount">
+          <small id="total">322423</small>
+
+         </div>
+         <input type="number"  id="count" placeholder="count">
+         <input type="text"  id="category" placeholder="category">
+         <button id="submit">Create</button>
+
+        </div>
+
+        <!--      ..................  ..........       -->
+
+
+      <div class="output">
+        <div class="searchblock">
+            <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="search">
+            <div class="btnsearch">
+
+                <button onclick="getSearchMood(this.id)" id="searchTitle"> search by title</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory"> search by category</button>
+            </div>
+
+
+            </div>
+            <div id="deletall"></div>
+
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+
+
+                </tr>
+                <tbody id="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>400</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delet">delete</button></td>
+
+
+
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>400</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delet">delete</button></td>
+
+
+
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>400</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delet">delete</button></td>
+
+
+
+
+                </tr> -->
+            </tbody>
+
+
+
+
+            </table>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+        
+
+        
+     <script src="harry.js"></script>
+    
+
+
+    </body>
+</html>
